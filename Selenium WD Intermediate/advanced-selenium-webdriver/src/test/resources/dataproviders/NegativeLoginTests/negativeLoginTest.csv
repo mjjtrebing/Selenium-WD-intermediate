@@ -1,0 +1,7 @@
+testnum,username,password,expectedMessage,description
+1,IncorrectUsername,SuperSecretPassword!,Your username is invalid!,Bad username
+2,tomsmith,incorrectPassowrd,Your password is invalid!,Bad password
+3,BADusername,BADpassword,Your username is invalid!,Bad username & Password
+4,,SuperSecretPassword!,Your username is invalid!,Empty username
+5,tomsmith,,Your password is invalid!,Empty password
+6,,,Your username is invalid!,Empty Login

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AlertTestsSuite]" parallel="none">
+  <test name="AlertTest(failed)" parallel="none">
+    <classes>
+      <class name="com.herokuapp.theinternet.jsAlertTests.AlertTest">
+        <methods>
+          <include name="jsPromptTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.jsAlertTests.AlertTest -->
+    </classes>
+  </test> <!-- AlertTest(failed) -->
+</suite> <!-- Failed suite [AlertTestsSuite] -->

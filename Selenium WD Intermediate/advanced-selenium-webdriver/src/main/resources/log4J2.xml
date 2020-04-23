@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Not sure what any of this does, but I got it from the teacher, he never explained
+Its needed for running the tests in parallel, and printing the results out -->
+ <Configuration status="WARN">
+
+	<Appenders>
+		<Console name="ConsoleAppender" target="SYSTEM_OUT">
+			<PatternLayout pattern="[%t] %d{HH:mm:ss,SSS} %-5p [%c{1}] %m%n" />
+		</Console>
+	</Appenders>
+
+	<Loggers>
+		<Root level="TRACE">
+			<AppenderRef ref="ConsoleAppender" />
+		</Root>
+	</Loggers>
+
+</Configuration>

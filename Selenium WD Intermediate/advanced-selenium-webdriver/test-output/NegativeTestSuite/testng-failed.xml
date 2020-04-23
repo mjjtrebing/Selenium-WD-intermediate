@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NegativeTestSuite]">
+  <parameter name="password" value="incorrectPassword"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="expectedMessage" value="Your password is invalid!"/>
+  <parameter name="username" value="tomsmith"/>
+  <test name="NegativePasswordTest-FF(failed)">
+    <parameter name="password" value="incorrectPassword"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="expectedMessage" value="Your password is invalid!"/>
+    <parameter name="username" value="tomsmith"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.NegativeTests">
+        <methods>
+          <include name="negativeTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.NegativeTests -->
+    </classes>
+  </test> <!-- NegativePasswordTest-FF(failed) -->
+</suite> <!-- Failed suite [NegativeTestSuite] -->

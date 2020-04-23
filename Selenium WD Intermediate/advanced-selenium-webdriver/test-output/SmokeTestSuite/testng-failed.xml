@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SmokeTestSuite]" parallel="none">
+  <test name="UploadTests(failed)" parallel="none">
+    <classes>
+      <class name="com.herokuapp.theinternet.LoginPageTests.PositiveLoginTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.LoginPageTests.PositiveLoginTests -->
+      <class name="com.herokuapp.theinternet.uploadtests.UploadTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="imageUploadTest"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.uploadtests.UploadTests -->
+      <class name="com.herokuapp.theinternet.jsAlertTests.AlertTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.jsAlertTests.AlertTest -->
+    </classes>
+  </test> <!-- UploadTests(failed) -->
+</suite> <!-- Failed suite [SmokeTestSuite] -->

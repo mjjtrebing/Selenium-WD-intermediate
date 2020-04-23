@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!--SmokeTest is for the most important tests, usch as positive login. -->
+<suite name="SmokeTestSuite" verbose="1">
+	<test name="PositiveLogin">
+		<classes>
+			<class
+				name="com.herokuapp.theinternet.LoginPageTests.PositiveLoginTests" />
+		</classes>
+	</test>
+
+	<test name="AlertsTests">
+		<classes>
+			<class name="com.herokuapp.theinternet.jsAlertTests.AlertTest" />
+		</classes>
+	</test>
+
+	<test name="UploadTests">
+		<classes>
+			<class name="com.herokuapp.theinternet.uploadtests.UploadTests" />
+		</classes>
+	</test>
+
+</suite>
